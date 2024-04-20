@@ -1,9 +1,1819 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
+    <title>Techtonic</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-</head>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-<body>
-    Hello
-</body>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <a href="index.html" class="logo-img me-auto">
+          <img src="assets/img/finallogo.png" alt="logo" />
+        </a>
+        <!-- <h1 class="logo me-auto"><a href="index.html">Techtonic</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#why-us">Generative AI</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#course">Courses</a></li>
+            <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+            <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+            <li><a class="getstarted scrollto" href="#contact">Contact</a></li>
+            <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h1>Your Gateway To Mastering Generative AI</h1>
+            <h2>
+              People will not be replaced by artificial intelligence, but by
+              people using artificial intelligence
+            </h2>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              <!-- <a
+                href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+                class="glightbox btn-watch-video"
+                ><i class="bi bi-play-circle"></i><span>Watch Video</span></a
+              > -->
+              <a href="#" id="btn-watch-video" class="btn-watch-video">
+                <i class="bi bi-play-circle"></i><span>Watch Video</span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 order-1 order-lg-2 hero-img"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/img/hero.png"
+              class="img-fluid hero animated"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- <div id="video-container" style="display: none;">
+        <video  width="100%" height="100%" controls autoplay>
+          <source src="assets/img/who_we_are.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div> -->
+    </section>
+    <div id="video-modal" class="modal">
+      <span class="close">&times;</span>
+      <video class="modal-content" controls autoplay>
+        <source src="assets/img/who_we_are.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- End Hero -->
+
+    <div>
+      <a href="https://wa.me/9994015121" target="_blank" class="link-wrapper">
+        <img
+          src="assets/img/whatsapp.svg"
+          width="45"
+          height="45"
+          class="whatsapp-image"
+          alt="whatsapp"
+        />
+      </a>
+    </div>
+
+    <main id="main">
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients section-bg">
+        <div class="container">
+          <div class="row" data-aos="zoom-in">
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center tech-img-container"
+            >
+              <img src="assets/img/ChatGPT.png" class="img-fluid" alt="" />
+              <div>ChatGpt</div>
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center tech-img-container"
+            >
+              <img src="assets/img/BERT.png" class="img-fluid img-big" alt="" />
+              <div>BERT</div>
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center tech-img-container"
+            >
+              <img
+                src="assets/img/Langchain.png"
+                class="img-fluid img-lang"
+                alt=""
+              />
+              <div>Langchain</div>
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center tech-img-container"
+            >
+              <img src="assets/img/HuggingFace.png" class="img-fluid" alt="" />
+              <div>HuggingFace</div>
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center tech-img-container"
+            >
+              <img src="assets/img/Python.png" class="img-fluid" alt="" />
+              <div>Python</div>
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center tech-img-container"
+            >
+              <img src="assets/img/TensorFlow.png" class="img-fluid" alt="" />
+              <div>TensorFlow</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cliens Section -->
+
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About Us</h2>
+          </div>
+
+          <div class="row content">
+            <!-- <div class="col-lg-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul>
+                <li>
+                  <i class="ri-check-double-line"></i> Ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> Duis aute irure dolor in
+                  reprehenderit in voluptate velit
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> Ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat
+                </li>
+              </ul>
+            </div> -->
+            <div class="col-lg-12 pt-4 pt-lg-0">
+              <p>
+                Welcome to TechTonic Learning Solutions, your premier training
+                partner dedicated to empowering individuals with the skills and
+                knowledge needed to thrive in the dynamic world of artificial
+                intelligence. Our seasoned professionals deliver top-tier
+                instruction across a range of topics including natural language
+                processing, AI model deployment, and ethical AI practices, using
+                tools like Python, TensorFlow, and major cloud platforms. With a
+                focus on hands-on learning, practical projects, and up-to-date
+                course materials, TechTonic empowers you to excel in your career
+                and lead in the AI industry while adhering to responsible AI
+                practices. Join us to be at the forefront of technological
+                innovation and turn possibilities into realities.
+              </p>
+              <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Us Section -->
+
+      <!-- ======= Why Us Section ======= -->
+      <section id="about-content" class="why-us section-bg">
+        <div class="container-fluid" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
+            >
+              <div class="content">
+                <h3>
+                  <strong>We are more than just a training partner</strong>
+                </h3>
+                <p>
+                  Community of passionate learners, industry experts, and
+                  innovators committed to pushing the boundaries of what's
+                  possible with Generative AI
+                </p>
+              </div>
+
+              <div class="accordion-list">
+                <ul>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      class="collapse"
+                      data-bs-target="#accordion-list-1"
+                      ><span>01</span> Expert Instructors: Learn from Industry
+                      Veterans: <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-1"
+                      class="collapse show"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Learn from the best in the industry with our team of
+                        seasoned instructors who bring real-world experience and
+                        deep expertise to the classroom.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-2"
+                      class="collapsed"
+                      ><span>02</span> Hands-On Projects: Practical Application
+                      of Skills:<i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-2"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Put theory into practice with hands-on projects that
+                        challenge you to apply your knowledge in creative and
+                        meaningful ways.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-3"
+                      class="collapsed"
+                      ><span>03</span> Personalized Support: Dedicated
+                      Mentorship for Success:
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-3"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Receive personalized support and guidance from our team
+                        of instructors and mentors who are dedicated to helping
+                        you succeed.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-4"
+                      class="collapsed"
+                      ><span>04</span> Industry Connections: Networking and
+                      Career Opportunities:
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-4"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Benefit from our strong network of industry partnerships
+                        and connections, providing you with valuable networking
+                        opportunities, internships, and potential job placements
+                        upon completion of the program.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+              style="background-image: url('assets/img/why-us.png')"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              &nbsp;
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Why Us Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-6 d-flex align-items-center"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <img src="assets/img/skills.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 content"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <h3>Program Highlights</h3>
+              <!-- <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p> -->
+              <div class="skills-content">
+                <div class="row-content">
+                  <div class="program-content">
+                    <img
+                      src="assets/img/program/program_1.png"
+                      class="img-fluid program-img"
+                      alt=""
+                    />
+                    Earning Prestigious Certification Recongnition
+                  </div>
+                  <div class="program-content">
+                    <img
+                      src="assets/img/program/program_2.png"
+                      class="img-fluid program-img"
+                      alt=""
+                    />
+                    Mastering Top AI Techniques and Tools
+                  </div>
+                </div>
+                <div class="row-content">
+                  <div class="program-content">
+                    <img
+                      src="assets/img/program/program_3.png"
+                      class="img-fluid program-img"
+                      alt=""
+                    />
+                    Curriculum Designed by AI Experts
+                  </div>
+                  <div class="program-content">
+                    <img
+                      src="assets/img/program/program_4.png"
+                      class="img-fluid program-img"
+                      alt=""
+                    />
+                    Developing Cloud-Based Generative AI Applications
+                  </div>
+                </div>
+                <div class="row-content">
+                  <div class="program-content">
+                    <img
+                      src="assets/img/program/program_5.png"
+                      class="img-fluid program-img"
+                      alt=""
+                    />
+                    Practical Experience with Generative AI Projects
+                  </div>
+                  <div class="program-content">
+                    <img
+                      src="assets/img/program/program_6.png"
+                      class="img-fluid program-img"
+                      alt=""
+                    />
+                    Networking Opportunities with AI Professionals
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="skills-content">
+                <div class="progress">
+                  <span class="skill">HTML <i class="val">100%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">CSS <i class="val">90%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">JavaScript <i class="val">75%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Photoshop <i class="val">55%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="55"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+
+      <!-- ======= Generative AI ======= -->
+      <section id="why-us" class="why-us section-bg">
+        <div class="container-fluid" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
+            >
+              <div class="content">
+                <h3>
+                  <strong>Generative AI</strong>
+                </h3>
+                <p>
+                  Generative AI can learn from existing artifacts to generate
+                  new, realistic artifacts (at scale) that reflect the
+                  characteristics of the training data but don’t repeat it. It
+                  can produce a variety of novel content, such as images, video,
+                  music, speech, text, software code and product designs.
+                </p>
+                <p>
+                  Generative AI uses a number of techniques that continue to
+                  evolve. Foremost are AI foundation models, which are trained
+                  on a broad set of unlabeled data that can be used for
+                  different tasks, with additional fine-tuning. Complex math and
+                  enormous computing power are required to create these trained
+                  models, but they are, in essence, prediction algorithms.
+                </p>
+              </div>
+
+              <div class="accordion-list">
+                <ul>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      class="collapse"
+                      data-bs-target="#accordion-list-5"
+                      ><span>2010</span> Near-Perfect Translation of Natural
+                      Language <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-5"
+                      class="collapse show"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Around 2010, AI researchers working on natural language
+                        translation discovered that models exposed to vast
+                        amounts of text produced much better results than models
+                        using top-down grammatical rules.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-6"
+                      class="collapsed"
+                      ><span>2014</span> Mastering the Meaning of Words<i
+                        class="bx bx-chevron-down icon-show"
+                      ></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-6"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        In 2014, language models began to make sense of the
+                        meaning of words in a natural language by analyzing the
+                        context in which the word appeared.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-7"
+                      class="collapsed"
+                      ><span>2017-2022</span> Large Language Foundation Models
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-7"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Advances made from 2017 to 2022 resulted in language
+                        models that can serve as a foundation for customization.
+                        Creating foundation models is cost-prohibitive, but once
+                        created, they can be customized using a small amount of
+                        additional data to achieve state-of-the-art performance
+                        on new tasks without significant investment.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-8"
+                      class="collapsed"
+                      ><span>2022</span> Conversational Large Language
+                      Foundation Models
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-8"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        2022 marked the arrival of ChatGPT, which gave users a
+                        simple way to access a large language foundational
+                        model.The brilliance of ChatGPT is not just in the
+                        incredibly advanced model at its core; equally, it is
+                        the ability to tap into this model by conversing with it
+                        in natural language. As Al researcher Andrej Karpathy
+                        quips, "Now the hottest programing language is English!"
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+              style="background-image: url('assets/img/why-us.png')"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              &nbsp;
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Generative AI Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-6 d-flex align-items-center"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <img src="assets/img/gartner.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 content"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <h3>Gartner predict for the future of generative AI use?</h3>
+              <p class="fst-italic">
+                Generative AI is primed to make an increasingly strong impact on
+                enterprises over the next five years. Gartner predicts that:
+              </p>
+              <div class="skills-content">
+                <ul>
+                  <li class="detail-content">
+                    <strong>By 2024</strong> 40% of enterprise applications will
+                    have embedded conversational AI, up from less than 5% in
+                    2020.
+                  </li>
+                  <li class="detail-content">
+                    <strong>By 2025</strong> 30% of enterprises will have
+                    implemented an AI-augmented development and testing
+                    strategy, up from 5% in 2021.
+                  </li>
+                  <li class="detail-content">
+                    <strong>By 2026</strong> generative design AI will automate
+                    60% of the design effort for new websites and mobile apps.
+                  </li>
+                  <li class="detail-content">
+                    <strong>By 2026</strong> over 100 million humans will engage
+                    robocolleagues to contribute to their work.
+                  </li>
+                  <li class="detail-content">
+                    <strong>By 2027</strong> nearly 15% of new applications will
+                    be automatically generated by AI without a human in the
+                    loop. This is not happening at all today.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="course" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Courses</h2>
+            <p>
+              Whether you’re starting out or looking to deepen your expertise,
+              our Generative AI courses are designed to cater to every level of
+              proficiency. Choose our Crash Course for a quick and intensive
+              introduction, or opt for our Deep Dive to explore advanced
+              concepts in detail. Enroll today to start transforming your
+              understanding of AI and its vast possibilities.
+            </p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-xl-6 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4><a href="">Generative AI Crash Course</a></h4>
+                <p>
+                  Gain a solid foundation in Generative AI fundamentals and
+                  applications with our intensive crash course
+                </p>
+                <div class="course-wrapper">
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1847-oUtr0mO-N4SNU2RCN8fDKsEaS4Wl"
+                    download="Generative_AI_Crash_Course.pdf"
+                    class="courseButton"
+                    >Course Brochure</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4><a href="">Generative AI Deep Dive</a></h4>
+                <p>
+                  Explore advanced topics and achieve expert-level proficiency
+                  with our comprehensive deep dive into Generative AI.
+                </p>
+                <div class="course-wrapper">
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1847-oUtr0mO-N4SNU2RCN8fDKsEaS4Wl"
+                    download="Generative_AI_Deep_Dive.pdf"
+                    class="courseButton scrollto"
+                    >Course Brochure</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="">Magni Dolores</a></h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-layer"></i></div>
+                <h4><a href="">Nemo Enim</a></h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Cta Section ======= -->
+      <!-- <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3>Call To Action</h3>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="#">Call To Action</a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- End Cta Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <!-- <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <ul
+            id="portfolio-flters"
+            class="d-flex justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img">
+                <img
+                  src="assets/img/portfolio/portfolio-1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <a
+                  href="assets/img/portfolio/portfolio-1.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="App 1"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img">
+                <img
+                  src="assets/img/portfolio/portfolio-2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <a
+                  href="assets/img/portfolio/portfolio-2.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Web 3"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img">
+                <img
+                  src="assets/img/portfolio/portfolio-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <a
+                  href="assets/img/portfolio/portfolio-3.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="App 2"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-img">
+                <img
+                  src="assets/img/portfolio/portfolio-4.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <a
+                  href="assets/img/portfolio/portfolio-4.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Card 2"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img">
+                <img
+                  src="assets/img/portfolio/portfolio-5.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <a
+                  href="assets/img/portfolio/portfolio-5.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Web 2"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img">
+                <img
+                  src="assets/img/portfolio/portfolio-6.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <a
+                  href="assets/img/portfolio/portfolio-6.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="App 3"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-img">
+                <img
+                  src="assets/img/portfolio/portfolio-7.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <a
+                  href="assets/img/portfolio/portfolio-7.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Card 1"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-img">
+                <img
+                  src="assets/img/portfolio/portfolio-8.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <a
+                  href="assets/img/portfolio/portfolio-8.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Card 3"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img">
+                <img
+                  src="assets/img/portfolio/portfolio-9.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <a
+                  href="assets/img/portfolio/portfolio-9.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Web 3"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Team Section ======= -->
+      <!-- <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic">
+                  <img
+                    src="assets/img/team/team-1.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="member-info">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <p>
+                    Explicabo voluptatem mollitia et repellat qui dolorum quasi
+                  </p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 mt-4 mt-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="member d-flex align-items-start">
+                <div class="pic">
+                  <img
+                    src="assets/img/team/team-2.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="member-info">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <p>
+                    Aut maiores voluptates amet et quis praesentium qui senda
+                    para
+                  </p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+              <div class="member d-flex align-items-start">
+                <div class="pic">
+                  <img
+                    src="assets/img/team/team-3.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="member-info">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <p>
+                    Quisquam facilis cum velit laborum corrupti fuga rerum quia
+                  </p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+              <div class="member d-flex align-items-start">
+                <div class="pic">
+                  <img
+                    src="assets/img/team/team-4.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="member-info">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <p>
+                    Dolorum tempora officiis odit laborum officiis et et
+                    accusamus
+                  </p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- End Team Section -->
+
+      <!-- ======= Pricing Section ======= -->
+      <section id="pricing" class="pricing">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Pricing</h2>
+            <p>
+              We’re excited to offer exclusive discounts for students interested
+              in our Generative AI courses. To learn more about our special
+              rates and how they can fit into your educational journey, please
+              contact us directly through WhatsApp. Our team is ready to assist
+              you with personalized offers and answer any questions you may
+              have.
+            </p>
+          </div>
+
+          <div class="row">
+            <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="box">
+                <h3>Free Plan</h3>
+                <h4><sup>$</sup>0<span>per month</span></h4>
+                <ul>
+                  <li>
+                    <i class="bx bx-check"></i> Quam adipiscing vitae proin
+                  </li>
+                  <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                  <li>
+                    <i class="bx bx-check"></i> Nulla at volutpat diam uteera
+                  </li>
+                  <li class="na">
+                    <i class="bx bx-x"></i>
+                    <span>Pharetra massa massa ultricies</span>
+                  </li>
+                  <li class="na">
+                    <i class="bx bx-x"></i>
+                    <span>Massa ultricies mi quis hendrerit</span>
+                  </li>
+                </ul>
+                <a href="#" class="buy-btn">Get Started</a>
+              </div>
+            </div> -->
+
+            <div
+              class="col-lg-4 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="box featured relative-content">
+                <h3>Generative AI Crash Course</h3>
+                <h4><sup>$</sup>299</h4>
+                <ul>
+                  <li>
+                    <i class="bx bx-check"></i> Complete your Generative AI
+                    training in just 45 days.
+                  </li>
+                  <li>
+                    <i class="bx bx-check"></i> Swiftly master essential AI
+                    concepts and tools.
+                  </li>
+                  <li>
+                    <i class="bx bx-check"></i> Gain practical experience
+                    through immediate project application.
+                  </li>
+                  <li>
+                    <i class="bx bx-check"></i> Learn from leading industry
+                    experts.
+                  </li>
+                  <li>
+                    <i class="bx bx-check"></i> Earn a recognized Generative AI
+                    certification.
+                  </li>
+                </ul>
+                <a href="#contact" class="buy-btn absolute-button">Register</a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="box">
+                <h3>Generative AI Deep Dive</h3>
+                <h4><sup>$</sup>479</h4>
+                <ul>
+                  <li>
+                    <i class="bx bx-check"></i> Explore advanced Generative AI
+                    topics over 2.5 months.
+                  </li>
+                  <li>
+                    <i class="bx bx-check"></i> Tackle comprehensive modules on
+                    complex AI concepts.
+                  </li>
+                  <li>
+                    <i class="bx bx-check"></i> Solve real-world problems with
+                    detailed projects.
+                  </li>
+                  <li>
+                    <i class="bx bx-check"></i> Access personalized career
+                    guidance and future tech insights.
+                  </li>
+                  <li>
+                    <i class="bx bx-check"></i> Network with industry
+                    professionals and potential employers.
+                  </li>
+                  <li>
+                    <i class="bx bx-check"></i> Enjoy continued access to
+                    updated course materials.
+                  </li>
+                  <li>
+                    <i class="bx bx-check"></i> Receive expert feedback to
+                    refine your skills.
+                  </li>
+                  <li>
+                    <i class="bx bx-check"></i> Achieve a distinguished
+                    certification in Generative AI.
+                  </li>
+                </ul>
+                <a href="#contact" class="buy-btn">Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Pricing Section -->
+
+      <!-- ======= Frequently Asked Questions Section ======= -->
+      <!-- <section id="faq" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  class="collapse"
+                  data-bs-target="#faq-list-1"
+                  >Non consectetur a erat nam at lectus urna duis?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-1"
+                  class="collapse show"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                    volutpat lacus laoreet non curabitur gravida. Venenatis
+                    lectus magna fringilla urna porttitor rhoncus dolor purus
+                    non.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-2"
+                  class="collapsed"
+                  >Feugiat scelerisque varius morbi enim nunc?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-2"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Dolor sit amet consectetur adipiscing elit pellentesque
+                    habitant morbi. Id interdum velit laoreet id donec ultrices.
+                    Fringilla phasellus faucibus scelerisque eleifend donec
+                    pretium. Est pellentesque elit ullamcorper dignissim. Mauris
+                    ultrices eros in cursus turpis massa tincidunt dui.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-3"
+                  class="collapsed"
+                  >Dolor sit amet consectetur adipiscing elit?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-3"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                    sagittis orci. Faucibus pulvinar elementum integer enim. Sem
+                    nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                    pellentesque eu tincidunt. Lectus urna duis convallis
+                    convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="400">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-4"
+                  class="collapsed"
+                  >Tempus quam pellentesque nec nam aliquam sem et tortor
+                  consequat? <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-4"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Molestie a iaculis at erat pellentesque adipiscing commodo.
+                    Dignissim suspendisse in est ante in. Nunc vel risus commodo
+                    viverra maecenas accumsan. Sit amet nisl suscipit adipiscing
+                    bibendum est. Purus gravida quis blandit turpis cursus in.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="500">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-5"
+                  class="collapsed"
+                  >Tortor vitae purus faucibus ornare. Varius vel pharetra vel
+                  turpis nunc eget lorem dolor?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-5"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Laoreet sit amet cursus sit amet dictum sit amet justo.
+                    Mauris vitae ultricies leo integer malesuada nunc vel.
+                    Tincidunt eget nullam non nisi est sit amet. Turpis nunc
+                    eget lorem dolor sed. Ut venenatis tellus in metus vulputate
+                    eu scelerisque.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+      <!-- End Frequently Asked Questions Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <!-- <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p> -->
+          </div>
+
+          <div class="row">
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+91 9994015121</p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.983881286375!2d80.25084251440706!3d13.082680990771327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265fadf929bbd%3A0x5e1e0b5979a69de0!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1649142254675"
+                  frameborder="0"
+                  style="border: 0; width: 100%; height: 290px"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form
+                role="form"
+                name="contact-form"
+                class="php-email-form"
+                method="POST"
+                action="https://script.google.com/macros/s/AKfycbw5hQZGC1XBLGrWLwEt6Qc21z9PSR0lsiGgziaOIr3kVlwhiDFXnE3OfYRuT9sHjtrg/exec"
+              >
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Phone</label>
+                    <input
+                      type="text"
+                      name="phone"
+                      class="form-control"
+                      id="phone"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Organization</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="organization"
+                      id="organization"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <!-- <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster
+                magna
+              </p>
+              <form action="" method="post" name="contact-form">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Techtonic</h3>
+              <p>
+                A108 Adam Street <br />
+                New York, NY 535022<br />
+                United States <br /><br />
+                <strong>Phone:</strong> +91 9994015121<br />
+                <strong>Email:</strong> info@example.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#hero">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#about">About</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#why-us">Generative AI</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#course">Courses</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Courses</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#course">Generative AI Crash Course</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#course">Generative AI Deep Dive</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Cras fermentum odio eu feugiat lide par naso tierra videa magna
+                derita valies
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a
+                  href="https://www.linkedin.com/company/techtonic-learning-solution"
+                  target="_blank"
+                  class="linkedin"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Techtonic</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="google_sheet.js"></script>
+    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("video-modal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("btn-watch-video");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // Get the video element
+      var video = document.querySelector("#video-modal video");
+
+      function resetVideo() {
+        video.currentTime = 0;
+      }
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "flex";
+        resetVideo();
+        video.play();
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+        resetVideo();
+        video.pause(); // Pause the video
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          video.pause(); // Pause the video
+        }
+      };
+    </script>
+  </body>
+</html>
