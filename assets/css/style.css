@@ -416,7 +416,7 @@ h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
@@ -425,7 +425,7 @@ h6 {
 #hero h2 {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #hero .btn-get-started {
@@ -473,7 +473,7 @@ h6 {
 }
 
 .hero {
-  max-width: 130%;
+  max-width: 110%;
 }
 
 .tech-img-container {
@@ -488,6 +488,16 @@ h6 {
 .img-lang {
   max-width: 75% !important;
 }
+
+.program-highlight-img {
+  max-width: 85%;
+}
+
+.program-highlights-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
 
 @media (max-width: 991px) {
   #hero {
@@ -1914,6 +1924,10 @@ section {
   .tech-img-container {
     padding: 10px;
   }
+
+  .program-highlight-img {
+    max-width: 100%;
+  }
 }
 
 .skills-content ul {
@@ -1998,4 +2012,8 @@ section {
 .absolute-button {
   position: absolute;
   bottom: 68px;
+}
+
+.align-justify {
+  text-align: justify;
 }
