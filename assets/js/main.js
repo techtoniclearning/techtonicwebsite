@@ -324,58 +324,78 @@ document.addEventListener('DOMContentLoaded', () => {
       curriculumTabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       
-      // Show/hide modules based on track
-      moduleItems.forEach(item => {
-        if (track === 'foundation') {
-          if (item.classList.contains('foundation-track')) {
-            item.style.display = 'block';
-          } else if (item.classList.contains('advanced-track')) {
-            item.style.display = 'none';
-          }
-        } else if (track === 'advanced') {
-          if (item.classList.contains('advanced-track')) {
-            item.style.display = 'block';
-          } else if (item.classList.contains('foundation-track')) {
-            item.style.display = 'none';
-          }
-        }
-      });
-      
-      // Show/hide module details based on track
-      moduleDetails.forEach(detail => {
-        if (track === 'foundation') {
-          if (detail.classList.contains('foundation-track')) {
-            detail.style.display = 'none';
-          } else if (detail.classList.contains('advanced-track')) {
-            detail.style.display = 'none';
-          }
-        } else if (track === 'advanced') {
-          if (detail.classList.contains('advanced-track')) {
-            detail.style.display = 'none';
-          } else if (detail.classList.contains('foundation-track')) {
-            detail.style.display = 'none';
-          }
-        }
-      });
-      
-      // Activate first module of selected track
-      const firstModule = track === 'foundation' 
-        ? document.querySelector('.module-item.foundation-track')
-        : document.querySelector('.module-item.advanced-track');
-      
-      if (firstModule) {
-        const moduleId = firstModule.getAttribute('data-module');
-        moduleItems.forEach(m => m.classList.remove('active'));
-        firstModule.classList.add('active');
-        
-        moduleDetails.forEach(d => {
-          d.classList.remove('active');
-          if (d.getAttribute('data-detail') === moduleId) {
-            d.classList.add('active');
-            d.style.display = 'block';
-          }
-        });
-      }
+            // Show/hide modules sidebar based on track
+            const curriculumContent = document.querySelector('.curriculum-content');
+            const modulesSidebar = document.querySelector('.curriculum-modules');
+            
+            if (track === 'foundation') {
+              if (curriculumContent) curriculumContent.classList.remove('advanced-track-active');
+              if (modulesSidebar) modulesSidebar.style.display = 'block';
+              moduleItems.forEach(item => {
+                if (item.classList.contains('foundation-track')) {
+                  item.style.display = 'block';
+                } else if (item.classList.contains('advanced-track')) {
+                  item.style.display = 'none';
+                }
+              });
+            } else if (track === 'advanced') {
+              // Hide the entire sidebar for advanced track and make content full width
+              if (curriculumContent) curriculumContent.classList.add('advanced-track-active');
+              if (modulesSidebar) modulesSidebar.style.display = 'none';
+            }
+            
+            // Show/hide module details based on track
+            moduleDetails.forEach(detail => {
+              if (track === 'foundation') {
+                if (detail.classList.contains('foundation-track')) {
+                  detail.style.display = 'none';
+                } else if (detail.classList.contains('advanced-track')) {
+                  detail.style.display = 'none';
+                }
+              } else if (track === 'advanced') {
+                if (detail.classList.contains('advanced-track')) {
+                  // Show coming soon preview
+                  if (detail.getAttribute('data-detail') === 'coming-soon') {
+                    detail.style.display = 'block';
+                    detail.classList.add('active');
+                  } else {
+                    detail.style.display = 'none';
+                  }
+                } else if (detail.classList.contains('foundation-track')) {
+                  detail.style.display = 'none';
+                }
+              }
+            });
+            
+            // Activate first module of selected track
+            if (track === 'foundation') {
+              const firstModule = document.querySelector('.module-item.foundation-track');
+              if (firstModule) {
+                const moduleId = firstModule.getAttribute('data-module');
+                moduleItems.forEach(m => {
+                  if (m.classList.contains('foundation-track')) {
+                    m.classList.remove('active');
+                  }
+                });
+                firstModule.classList.add('active');
+                
+                moduleDetails.forEach(d => {
+                  d.classList.remove('active');
+                  if (d.getAttribute('data-detail') === moduleId && d.classList.contains('foundation-track')) {
+                    d.classList.add('active');
+                    d.style.display = 'block';
+                  }
+                });
+              }
+            } else if (track === 'advanced') {
+              // Show coming soon preview
+              const comingSoon = document.querySelector('.module-detail[data-detail="coming-soon"]');
+              if (comingSoon) {
+                moduleDetails.forEach(d => d.classList.remove('active'));
+                comingSoon.classList.add('active');
+                comingSoon.style.display = 'block';
+              }
+            }
     });
   });
 
@@ -406,23 +426,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Download Syllabus functionality
-  if (downloadBtn) {
-    downloadBtn.addEventListener('click', () => {
-      const pdfPath = currentTrack === 'foundation' 
-        ? 'resources/foundation-track-syllabus.pdf'
-        : 'resources/advanced-track-syllabus.pdf';
-      
-      const link = document.createElement('a');
-      link.href = pdfPath;
-      link.download = currentTrack === 'foundation' 
-        ? 'Foundation_Track_Syllabus.pdf'
-        : 'Advanced_Track_Syllabus.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    });
-  }
+        // Download Syllabus functionality
+        if (downloadBtn) {
+          downloadBtn.addEventListener('click', () => {
+            const pdfPath = currentTrack === 'foundation' 
+              ? 'resources/core-track-syllabus.pdf'
+              : 'resources/advanced-track-syllabus.pdf';
+            
+            const link = document.createElement('a');
+            link.href = pdfPath;
+            link.download = currentTrack === 'foundation' 
+              ? 'Core_Track_Syllabus.pdf'
+              : 'Advanced_Track_Syllabus.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          });
+        }
   } catch (error) {
     console.error('Error initializing curriculum:', error);
   }

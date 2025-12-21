@@ -62,7 +62,10 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#curriculum">Curriculum</a></li>
+            <li><a class="nav-link scrollto" href="#portfolio-projects">Projects</a></li>
+            <li><a class="nav-link scrollto" href="#learning-path-choice">Courses</a></li>
+            <li><a class="nav-link scrollto" href="#about-techtonic">About</a></li>
             <li><a class="getstarted scrollto" href="#contact">Contact</a></li>
             <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
           </ul>
@@ -88,7 +91,7 @@
               people using artificial intelligence
             </h2>
             <div class="d-flex justify-content-center justify-content-lg-start">
-              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              <a href="#" id="hero-bootcamp-btn" class="btn-get-started">Explore GenAI Bootcamp</a>
               <!-- <a
                 href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
                 class="glightbox btn-watch-video"
@@ -200,7 +203,7 @@
       <section id="why-choose-techtonic" class="why-choose-techtonic">
         <div class="container" data-aos="fade-up">
           <div class="why-choose-header">
-            <h2 class="why-choose-title">We Are More Than Just A Training Partner</h2>
+            <h2 class="why-choose-title">We are more than just a training partner</h2>
             <p class="why-choose-description">Every element of our program is structured to maximise learning — small groups, practical exercises, step-by-step guidance, and real project work.</p>
           </div>
 
@@ -343,7 +346,7 @@
           <div class="curriculum-header">
             <h2 class="curriculum-title">Structured, Skill-Focused Curriculum</h2>
             <div class="curriculum-tabs">
-              <button class="curriculum-tab active" data-track="foundation">Foundation Track</button>
+              <button class="curriculum-tab active" data-track="foundation">Core Track</button>
               <button class="curriculum-tab" data-track="advanced">Advanced Track</button>
             </div>
           </div>
@@ -368,63 +371,33 @@
               <div class="module-item foundation-track" data-module="6">
                 <h4>Module 6: Career Preparation & Industry Placement</h4>
               </div>
-              <div class="module-item advanced-track" data-module="7" style="display: none;">
-                <h4>Module 1: Advanced LLM Architectures & Transformers</h4>
-              </div>
-              <div class="module-item advanced-track" data-module="8" style="display: none;">
-                <h4>Module 2: Multimodal AI & Cross-Modal Learning</h4>
-              </div>
-              <div class="module-item advanced-track" data-module="9" style="display: none;">
-                <h4>Module 3: Advanced RAG Systems & Vector Databases</h4>
-              </div>
-              <div class="module-item advanced-track" data-module="10" style="display: none;">
-                <h4>Module 4: AI Agents & Autonomous Systems</h4>
-              </div>
-              <div class="module-item advanced-track" data-module="11" style="display: none;">
-                <h4>Module 5: Enterprise AI Solutions & Scaling</h4>
-              </div>
-              <div class="module-item advanced-track" data-module="12" style="display: none;">
-                <h4>Module 6: Research & Innovation in Generative AI</h4>
-              </div>
             </div>
 
             <div class="curriculum-details">
               <div class="module-detail active foundation-track" data-detail="1">
                 <div class="module-detail-header">
-                  <h3>Module 1: Generative AI Fundamentals & Core Concepts</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 8 Weeks</span>
+                  <h3>Module 1: Foundations of Generative AI & Prompt Engineering</h3>
                 </div>
                 <p class="module-description">
-                  The foundation of your Generative AI journey begins with mastering core principles, visualization techniques, and practical implementation. This module establishes your confidence in AI fundamentals and prepares you for advanced concepts.
+                  Understanding Generative AI and its real-world impact. Learn the core technological differences between Traditional AI and Generative AI, and master Prompt Engineering principles with production-ready prompt patterns for real applications.
                 </p>
                 <div class="module-topics">
                   <div class="topic-section">
-                    <h5>Python for AI</h5>
+                    <h5>Session 1: Generative AI & the Art of Prompting</h5>
                     <ul>
-                      <li>Introduction to Python and AI Libraries</li>
-                      <li>Data Structures, Control Flow, and Functions</li>
-                      <li>Object-Oriented Programming for AI</li>
-                      <li>NumPy, Pandas, and Data Manipulation</li>
-                      <li>Working with APIs and Data Pipelines</li>
+                      <li>Understanding Generative AI and its real-world impact</li>
+                      <li>Traditional AI vs Generative AI — core technological differences</li>
+                      <li>Introduction to Prompt Engineering principles</li>
+                      <li>Implementing production-ready prompt patterns for real applications</li>
                     </ul>
                   </div>
                   <div class="topic-section">
-                    <h5>Generative AI Basics</h5>
+                    <h5>Session 2: Large Language Models & Embedding Essentials</h5>
                     <ul>
-                      <li>Introduction to Large Language Models</li>
-                      <li>Prompt Engineering Fundamentals</li>
-                      <li>Text Generation and Completion</li>
-                      <li>Understanding Tokens and Embeddings</li>
-                      <li>Model Selection and Evaluation</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>AI Visualization & Reporting</h5>
-                    <ul>
-                      <li>Data Visualization with Matplotlib and Seaborn</li>
-                      <li>Creating AI Dashboards</li>
-                      <li>Model Performance Visualization</li>
-                      <li>Interactive Reporting Tools</li>
+                      <li>Definition and operation of Large Language Models (LLMs)</li>
+                      <li>Overview of the LLM landscape (OpenAI, LLaMA, Mistral)</li>
+                      <li>Managing tokens, context windows, and model limitations</li>
+                      <li>Comprehensive guide to embeddings: types, use cases, and deployment</li>
                     </ul>
                   </div>
                 </div>
@@ -432,40 +405,27 @@
 
               <div class="module-detail foundation-track" data-detail="2">
                 <div class="module-detail-header">
-                  <h3>Module 2: Advanced Prompting & Model Fine-Tuning</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 6 Weeks</span>
+                  <h3>Module 2: LLM APIs & Conversational AI</h3>
                 </div>
                 <p class="module-description">
-                  Master advanced techniques for optimizing AI model performance through sophisticated prompting strategies and fine-tuning methodologies. This module deepens your understanding of how to effectively communicate with AI models and customize them for specific tasks.
+                  Explore the OpenAI model ecosystem and learn to build production-ready conversational chatbots. Understand open-source LLMs like LLaMA and Mistral, and make strategic decisions about model selection for various applications.
                 </p>
                 <div class="module-topics">
                   <div class="topic-section">
-                    <h5>Advanced Prompt Engineering</h5>
+                    <h5>Session 1: OpenAI Models & Conversational Chatbot Development</h5>
                     <ul>
-                      <li>Chain-of-Thought Prompting Techniques</li>
-                      <li>Few-Shot and Zero-Shot Learning Strategies</li>
-                      <li>Prompt Optimization and Iteration Methods</li>
-                      <li>Role-Based Prompting and Persona Design</li>
-                      <li>Multi-Step Reasoning and Problem Decomposition</li>
+                      <li>Detailed walkthrough of the OpenAI model ecosystem</li>
+                      <li>Chat completion architecture and API usage</li>
+                      <li>Understanding and managing System, User, and Assistant roles</li>
+                      <li>Building a production-ready conversational chatbot with proper context management</li>
                     </ul>
                   </div>
                   <div class="topic-section">
-                    <h5>Model Fine-Tuning & Customization</h5>
+                    <h5>Session 2: LLaMA & Mistral – Open-Source LLMs in Action</h5>
                     <ul>
-                      <li>Transfer Learning Concepts and Applications</li>
-                      <li>Fine-Tuning Strategies for Different Model Types</li>
-                      <li>Hyperparameter Optimization Techniques</li>
-                      <li>LoRA and Parameter-Efficient Fine-Tuning</li>
-                      <li>Domain Adaptation and Specialization</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Performance Optimization</h5>
-                    <ul>
-                      <li>Model Evaluation Metrics and Benchmarks</li>
-                      <li>Inference Speed Optimization</li>
-                      <li>Cost Optimization for API Usage</li>
-                      <li>Quality Assurance and Testing Strategies</li>
+                      <li>Exploring the open-source LLM ecosystem and its advantages</li>
+                      <li>Strategic comparison: OpenAI vs. Open-source models for various applications</li>
+                      <li>Analyzing cost efficiency, latency, and deployment trade-offs</li>
                     </ul>
                   </div>
                 </div>
@@ -473,40 +433,27 @@
 
               <div class="module-detail foundation-track" data-detail="3">
                 <div class="module-detail-header">
-                  <h3>Module 3: LLM Architecture & Deep Learning Foundations</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 10 Weeks</span>
+                  <h3>Module 3: LLM Implementation & Text Intelligence</h3>
                 </div>
                 <p class="module-description">
-                  Dive deep into the architecture of Large Language Models and build a strong foundation in deep learning principles that power modern AI systems. Understand the mathematical and computational foundations that enable these powerful models.
+                  Learn to implement open-source LLMs locally and master text intelligence techniques including summarization, data extraction, and structured output generation from unstructured text.
                 </p>
                 <div class="module-topics">
                   <div class="topic-section">
-                    <h5>Neural Networks & Deep Learning</h5>
+                    <h5>Session 1: Implementing LLaMA & Mistral Locally</h5>
                     <ul>
-                      <li>Neural Network Fundamentals and Architecture</li>
-                      <li>Backpropagation and Gradient Descent Optimization</li>
-                      <li>Convolutional and Recurrent Network Architectures</li>
-                      <li>Activation Functions and Regularization Techniques</li>
-                      <li>Training Dynamics and Convergence Analysis</li>
+                      <li>Setting up local environments for open-source LLM inference</li>
+                      <li>Fine-tuning generation parameters (temperature, top-p) for optimal results</li>
+                      <li>Advanced prompt optimisation techniques for open models</li>
                     </ul>
                   </div>
                   <div class="topic-section">
-                    <h5>Transformer Architecture & Attention</h5>
+                    <h5>Session 2: Text Summarisation & Intelligent Data Extraction</h5>
                     <ul>
-                      <li>Self-Attention and Multi-Head Attention Mechanisms</li>
-                      <li>Transformer Models: BERT, GPT, and Variants</li>
-                      <li>Position Encoding and Sequence Processing</li>
-                      <li>Architecture Design Patterns and Best Practices</li>
-                      <li>Scaling Laws and Model Efficiency</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Advanced Deep Learning Concepts</h5>
-                    <ul>
-                      <li>Normalization Techniques (LayerNorm, BatchNorm)</li>
-                      <li>Optimization Algorithms (Adam, AdamW, etc.)</li>
-                      <li>Model Compression and Quantization</li>
-                      <li>Distributed Training Strategies</li>
+                      <li>Extracting structured JSON outputs from unstructured text (e.g., using Mistral)</li>
+                      <li>Applying Named Entity Recognition (NER) and attribute extraction methods</li>
+                      <li>Techniques for long-document summarisation (e.g., recursive methods)</li>
+                      <li>Practical case study: Automated invoice data extraction</li>
                     </ul>
                   </div>
                 </div>
@@ -514,39 +461,28 @@
 
               <div class="module-detail foundation-track" data-detail="4">
                 <div class="module-detail-header">
-                  <h3>Module 4: Specialization in NLP or Computer Vision</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 8 Weeks</span>
+                  <h3>Module 4: Retrieval-Augmented Generation (RAG) Foundations</h3>
                 </div>
                 <p class="module-description">
-                  Choose your specialization path and develop expertise in either Natural Language Processing or Computer Vision applications. Build domain-specific knowledge and practical skills in your chosen area.
+                  Understand the rationale for RAG in enterprise AI systems and learn to build complete RAG-powered Q&A systems. Master chunking strategies, embedding creation, and vector database integration.
                 </p>
                 <div class="module-topics">
                   <div class="topic-section">
-                    <h5>NLP Specialization Track</h5>
+                    <h5>Session 1: RAG Concepts & System Architecture</h5>
                     <ul>
-                      <li>Advanced NLP Techniques and Methodologies</li>
-                      <li>Sentiment Analysis and Text Classification Systems</li>
-                      <li>Named Entity Recognition and Information Extraction</li>
-                      <li>Text Summarization and Generation Techniques</li>
-                      <li>Question Answering and Conversational AI</li>
+                      <li>Rationale for RAG in enterprise AI systems and its necessity</li>
+                      <li>Deconstructing the end-to-end RAG pipeline</li>
+                      <li>Effective chunking strategies for high-accuracy retrieval</li>
+                      <li>Detailed process of embedding creation and retrieval workflow</li>
                     </ul>
                   </div>
                   <div class="topic-section">
-                    <h5>Computer Vision Specialization Track</h5>
+                    <h5>Session 2: Building a RAG-Powered Q&A System</h5>
                     <ul>
-                      <li>Image Generation and Processing with AI</li>
-                      <li>Object Detection and Recognition Systems</li>
-                      <li>GANs and Image Synthesis Techniques</li>
-                      <li>Image Segmentation and Analysis</li>
-                      <li>Video Processing and Analysis</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Cross-Domain Applications</h5>
-                    <ul>
-                      <li>Multimodal AI Systems Integration</li>
-                      <li>Transfer Learning Across Domains</li>
-                      <li>Building End-to-End AI Applications</li>
+                      <li>Ingesting and preprocessing diverse data formats (e.g., PDF)</li>
+                      <li>Introduction to vector databases: Qdrant / Chroma integration</li>
+                      <li>Implementing semantic similarity search for relevant information retrieval</li>
+                      <li>Constructing a complete RAG-based Q&A application</li>
                     </ul>
                   </div>
                 </div>
@@ -554,40 +490,27 @@
 
               <div class="module-detail foundation-track" data-detail="5">
                 <div class="module-detail-header">
-                  <h3>Module 5: Production Deployment & MLOps for AI Systems</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 6 Weeks</span>
+                  <h3>Module 5: Advanced RAG & Conversational SQL</h3>
                 </div>
                 <p class="module-description">
-                  Learn to deploy AI models in production environments and master MLOps practices for scalable, reliable AI systems. Transform your prototypes into production-ready applications.
+                  Master advanced RAG optimization techniques and learn to build conversational interfaces that interact with SQL databases. Implement hybrid search, metadata filtering, and secure SQL query generation.
                 </p>
                 <div class="module-topics">
                   <div class="topic-section">
-                    <h5>Model Deployment & Infrastructure</h5>
+                    <h5>Session 1: Advanced RAG Optimisation Techniques</h5>
                     <ul>
-                      <li>Cloud Platform Integration (AWS, GCP, Azure)</li>
-                      <li>API Development and Management Best Practices</li>
-                      <li>Containerization with Docker and Kubernetes</li>
-                      <li>Serverless Deployment Strategies</li>
-                      <li>Load Balancing and Auto-Scaling</li>
+                      <li>Implementing metadata-driven filtering for precise retrieval</li>
+                      <li>Integrating hybrid search (keyword + semantic) strategies</li>
+                      <li>Accuracy tuning methodologies and hallucination reduction techniques</li>
                     </ul>
                   </div>
                   <div class="topic-section">
-                    <h5>MLOps Practices & Automation</h5>
+                    <h5>Session 2: Chat with SQL Databases</h5>
                     <ul>
-                      <li>CI/CD Pipelines for AI Models</li>
-                      <li>Model Monitoring and Performance Tracking</li>
-                      <li>Version Control for ML Models and Data</li>
-                      <li>Automated Testing and Quality Assurance</li>
-                      <li>Model Registry and Lifecycle Management</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Production Best Practices</h5>
-                    <ul>
-                      <li>Error Handling and Resilience Patterns</li>
-                      <li>Security and Compliance Considerations</li>
-                      <li>Cost Optimization and Resource Management</li>
-                      <li>Documentation and Maintenance Strategies</li>
+                      <li>Core process of converting Natural Language → SQL queries</li>
+                      <li>Schema-aware query generation for increased reliability</li>
+                      <li>Protocols for secure and safe SQL execution</li>
+                      <li>Developing conversational analytics interfaces with PostgreSQL</li>
                     </ul>
                   </div>
                 </div>
@@ -595,288 +518,164 @@
 
               <div class="module-detail foundation-track" data-detail="6">
                 <div class="module-detail-header">
-                  <h3>Module 6: Career Preparation & Industry Placement</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 4 Weeks</span>
+                  <h3>Module 6: Agentic AI Fundamentals</h3>
                 </div>
                 <p class="module-description">
-                  Prepare for your AI career with portfolio development, interview preparation, and industry placement support. Position yourself as a competitive candidate in the AI job market.
+                  Understand AI Agents and their core components. Learn the differences between Chatbots, RAG, and Agents, and build single-agent systems with tool-calling capabilities and multi-step task execution.
                 </p>
                 <div class="module-topics">
                   <div class="topic-section">
-                    <h5>Portfolio Development</h5>
+                    <h5>Session 1: Understanding Agentic AI</h5>
                     <ul>
-                      <li>Portfolio Building and Project Showcasing</li>
-                      <li>GitHub Profile Optimization and Best Practices</li>
-                      <li>Creating Technical Blog Posts and Documentation</li>
-                      <li>Showcasing Real-World AI Applications</li>
-                      <li>Building a Personal Brand in AI</li>
+                      <li>Defining an AI Agent and its core components</li>
+                      <li>The role of Tools, Memory, and Planning in agent architecture</li>
+                      <li>Comparative analysis: Chatbots vs RAG vs Agents</li>
                     </ul>
                   </div>
                   <div class="topic-section">
-                    <h5>Career Development & Job Search</h5>
+                    <h5>Session 2: Building Single-Agent Systems</h5>
                     <ul>
-                      <li>Resume Optimization for AI and ML Roles</li>
-                      <li>LinkedIn Profile Enhancement Strategies</li>
-                      <li>Interview Preparation and Technical Assessments</li>
-                      <li>Mock Interviews and Feedback Sessions</li>
-                      <li>Salary Negotiation and Career Planning</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Industry Connections</h5>
-                    <ul>
-                      <li>Networking Strategies and Best Practices</li>
-                      <li>Industry Events and Conference Participation</li>
-                      <li>Mentorship and Professional Development</li>
-                      <li>Job Placement Assistance and Support</li>
+                      <li>Practical application of tool-calling agents</li>
+                      <li>Designing robust decision-making and reasoning workflows</li>
+                      <li>Implementing multi-step task execution chains</li>
+                      <li>Exploring real-world agent use cases and implementations</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <!-- Advanced Track Modules -->
-              <div class="module-detail advanced-track" data-detail="7" style="display: none;">
+              <div class="module-detail foundation-track" data-detail="7">
                 <div class="module-detail-header">
-                  <h3>Module 1: Advanced LLM Architectures & Transformers</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 10 Weeks</span>
+                  <h3>Module 7: Multi-Agent Systems & N8N Automation</h3>
                 </div>
                 <p class="module-description">
-                  Master the cutting-edge architectures and transformer models that power modern generative AI. Deep dive into advanced model designs, optimization techniques, and architectural innovations.
+                  Design multi-agent architectures with role-based agent design and learn to orchestrate complex workflows using the n8n automation platform for building LLM-powered automation pipelines.
                 </p>
                 <div class="module-topics">
                   <div class="topic-section">
-                    <h5>Advanced Transformer Architectures</h5>
+                    <h5>Session 1: Designing Multi-Agent Architectures</h5>
                     <ul>
-                      <li>GPT-4, Claude, and State-of-the-Art Models</li>
-                      <li>Mixture of Experts (MoE) Architectures</li>
-                      <li>Sparse Attention and Efficient Transformers</li>
-                      <li>Long Context Processing and Memory Optimization</li>
-                      <li>Architectural Innovations and Research Trends</li>
+                      <li>Principles of role-based agent design</li>
+                      <li>Implementing the Planner → Executor → Reviewer agent pattern</li>
+                      <li>Strategies for effective inter-agent communication</li>
+                      <li>Techniques for robust error handling and recovery in multi-agent systems</li>
                     </ul>
                   </div>
                   <div class="topic-section">
-                    <h5>Model Optimization & Efficiency</h5>
+                    <h5>Session 2: Multi-Agent Workflows using n8n</h5>
                     <ul>
-                      <li>Quantization Techniques and Model Compression</li>
-                      <li>Knowledge Distillation Strategies</li>
-                      <li>Pruning and Sparse Model Training</li>
-                      <li>Efficient Inference and Latency Optimization</li>
-                      <li>Hardware-Aware Model Design</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Training & Fine-Tuning Advanced Models</h5>
-                    <ul>
-                      <li>Large-Scale Distributed Training</li>
-                      <li>Advanced Fine-Tuning Methodologies</li>
-                      <li>Reinforcement Learning from Human Feedback (RLHF)</li>
-                      <li>Continual Learning and Adaptation</li>
+                      <li>Introduction to the n8n automation platform</li>
+                      <li>Utilizing webhooks, triggers, and workflow nodes for automation</li>
+                      <li>Building LLM-powered automation pipelines</li>
+                      <li>Assembling and orchestrating multi-agent systems within n8n</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div class="module-detail advanced-track" data-detail="8" style="display: none;">
+              <div class="module-detail foundation-track" data-detail="8">
                 <div class="module-detail-header">
-                  <h3>Module 2: Multimodal AI & Cross-Modal Learning</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 8 Weeks</span>
+                  <h3>Module 8: FastAPI for Gen AI Applications</h3>
                 </div>
                 <p class="module-description">
-                  Explore the frontier of multimodal AI systems that combine text, images, audio, and video. Learn to build sophisticated cross-modal applications that understand and generate content across multiple modalities.
+                  Master FastAPI essentials for building scalable AI systems. Learn to expose RAG and Agent systems as production-ready APIs with proper authentication, rate-limiting, and async capabilities.
                 </p>
                 <div class="module-topics">
                   <div class="topic-section">
-                    <h5>Multimodal Model Architectures</h5>
+                    <h5>Session 1: FastAPI Essentials for AI Systems</h5>
                     <ul>
-                      <li>CLIP, DALL-E, and Vision-Language Models</li>
-                      <li>Cross-Modal Attention Mechanisms</li>
-                      <li>Unified Embedding Spaces</li>
-                      <li>Multimodal Transformer Designs</li>
-                      <li>Audio-Visual and Video-Language Models</li>
+                      <li>Review of REST API fundamentals and principles</li>
+                      <li>Designing clear request and response schemas</li>
+                      <li>Leveraging Async APIs for highly scalable AI services</li>
+                      <li>Integrating LLMs directly into FastAPI endpoints</li>
                     </ul>
                   </div>
                   <div class="topic-section">
-                    <h5>Cross-Modal Applications</h5>
+                    <h5>Session 2: Exposing RAG & Agent Systems as APIs</h5>
                     <ul>
-                      <li>Image-to-Text and Text-to-Image Generation</li>
-                      <li>Video Understanding and Generation</li>
-                      <li>Audio Synthesis and Voice Cloning</li>
-                      <li>Multimodal Search and Retrieval Systems</li>
-                      <li>Interactive Multimodal Interfaces</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Advanced Techniques</h5>
-                    <ul>
-                      <li>Contrastive Learning for Multimodal Data</li>
-                      <li>Alignment Strategies Across Modalities</li>
-                      <li>Evaluation Metrics for Multimodal Systems</li>
-                      <li>Real-World Deployment Challenges</li>
+                      <li>Developing robust Chatbot APIs</li>
+                      <li>Creating dedicated RAG and Agent endpoints</li>
+                      <li>Best practices for API authentication and rate-limiting</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div class="module-detail advanced-track" data-detail="9" style="display: none;">
+              <div class="module-detail foundation-track" data-detail="9">
                 <div class="module-detail-header">
-                  <h3>Module 3: Advanced RAG Systems & Vector Databases</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 8 Weeks</span>
+                  <h3>Module 9: Dockerisation & Cloud Deployment</h3>
                 </div>
                 <p class="module-description">
-                  Master advanced Retrieval-Augmented Generation systems and vector database technologies. Build production-ready RAG applications with sophisticated retrieval and generation strategies.
+                  Learn Docker fundamentals for containerizing Gen AI applications and deploy them to cloud environments. Master production-grade deployment considerations including monitoring and scaling.
                 </p>
                 <div class="module-topics">
                   <div class="topic-section">
-                    <h5>Advanced RAG Architectures</h5>
+                    <h5>Session 1: Docker for Gen AI Applications</h5>
                     <ul>
-                      <li>Multi-Stage Retrieval Strategies</li>
-                      <li>Hybrid Search and Re-Ranking Techniques</li>
-                      <li>Query Understanding and Expansion</li>
-                      <li>Context Compression and Optimization</li>
-                      <li>Self-RAG and Adaptive Retrieval</li>
+                      <li>Docker fundamentals and containerization concepts</li>
+                      <li>Writing optimized Dockerfiles for FastAPI + LLMs</li>
+                      <li>Strategies for environment variables and secrets management</li>
+                      <li>Implementing container best practices for production</li>
                     </ul>
                   </div>
                   <div class="topic-section">
-                    <h5>Vector Databases & Embeddings</h5>
+                    <h5>Session 2: Cloud Deployment on Virtual Machines</h5>
                     <ul>
-                      <li>Pinecone, Weaviate, and Qdrant Deep Dive</li>
-                      <li>Advanced Embedding Techniques</li>
-                      <li>Hybrid Search with Keywords and Vectors</li>
-                      <li>Scalability and Performance Optimization</li>
-                      <li>Metadata Filtering and Complex Queries</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Production RAG Systems</h5>
-                    <ul>
-                      <li>Evaluation and Quality Assurance</li>
-                      <li>Handling Edge Cases and Errors</li>
-                      <li>Monitoring and Observability</li>
-                      <li>Cost Optimization and Efficiency</li>
+                      <li>Virtual machine setup and configuration</li>
+                      <li>Deploying Dockerised AI applications to cloud environments</li>
+                      <li>Production-grade deployment considerations (monitoring, scaling)</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div class="module-detail advanced-track" data-detail="10" style="display: none;">
+              <div class="module-detail foundation-track" data-detail="10">
                 <div class="module-detail-header">
-                  <h3>Module 4: AI Agents & Autonomous Systems</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 10 Weeks</span>
+                  <h3>Module 10: Capstone Project</h3>
                 </div>
                 <p class="module-description">
-                  Build intelligent AI agents that can reason, plan, and act autonomously. Learn to create sophisticated agentic systems using frameworks like LangChain, AutoGPT, and custom architectures.
+                  A comprehensive project integrating all skills learned throughout the program to build a robust, production-ready Generative AI solution. This capstone demonstrates your mastery of the complete GenAI development lifecycle.
                 </p>
                 <div class="module-topics">
                   <div class="topic-section">
-                    <h5>Agent Architectures & Frameworks</h5>
+                    <h5>Capstone: End-to-End Gen AI System</h5>
                     <ul>
-                      <li>ReAct, Plan-and-Solve, and Agent Patterns</li>
-                      <li>LangChain and LangGraph for Agent Development</li>
-                      <li>Tool Use and Function Calling</li>
-                      <li>Multi-Agent Systems and Coordination</li>
-                      <li>Memory and State Management in Agents</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Reasoning & Planning</h5>
-                    <ul>
-                      <li>Chain-of-Thought and Tree-of-Thought Reasoning</li>
-                      <li>Planning Algorithms and Task Decomposition</li>
-                      <li>Self-Correction and Error Recovery</li>
-                      <li>Long-Horizon Planning Strategies</li>
-                      <li>Reasoning with Uncertainty</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Advanced Agent Capabilities</h5>
-                    <ul>
-                      <li>Web Browsing and Tool Integration</li>
-                      <li>Code Execution and Software Development</li>
-                      <li>Autonomous Research and Information Gathering</li>
-                      <li>Agent Evaluation and Safety Considerations</li>
+                      <li>Integrating conversational AI, RAG, and agentic capabilities</li>
+                      <li>Building a complete production-ready application</li>
+                      <li>Implementing proper API design and deployment</li>
+                      <li>Demonstrating real-world problem-solving with GenAI</li>
+                      <li>Portfolio-ready project showcasing all learned skills</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div class="module-detail advanced-track" data-detail="11" style="display: none;">
-                <div class="module-detail-header">
-                  <h3>Module 5: Enterprise AI Solutions & Scaling</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 8 Weeks</span>
+              <!-- Advanced Track Coming Soon Preview -->
+              <div class="module-detail advanced-track coming-soon-preview" data-detail="coming-soon" style="display: none;">
+                <div class="coming-soon-header">
+                  <span class="coming-soon-badge-large">Coming Soon</span>
+                  <h3>Advanced Track</h3>
+                  <p class="coming-soon-subtitle">
+                    Designed for professionals who have completed the Core Track and want to build, scale, and govern enterprise-grade GenAI systems.
+                  </p>
                 </div>
-                <p class="module-description">
-                  Design and deploy enterprise-grade AI solutions that scale to millions of users. Master advanced infrastructure, security, compliance, and operational excellence for production AI systems.
-                </p>
-                <div class="module-topics">
-                  <div class="topic-section">
-                    <h5>Enterprise Architecture & Infrastructure</h5>
-                    <ul>
-                      <li>Microservices Architecture for AI Systems</li>
-                      <li>Kubernetes and Container Orchestration</li>
-                      <li>Distributed Systems and Load Balancing</li>
-                      <li>High Availability and Disaster Recovery</li>
-                      <li>Multi-Region Deployment Strategies</li>
+                
+                <div class="coming-soon-content">
+                  <div class="coming-soon-focus-areas">
+                    <h4>High-Level Focus Areas</h4>
+                    <ul class="focus-areas-list">
+                      <li><i class="ri-checkbox-circle-line"></i> GenAI system architecture & scalability</li>
+                      <li><i class="ri-checkbox-circle-line"></i> Advanced RAG evaluation and optimization</li>
+                      <li><i class="ri-checkbox-circle-line"></i> Agent reliability, guardrails, and governance</li>
+                      <li><i class="ri-checkbox-circle-line"></i> Cost engineering and performance tuning</li>
+                      <li><i class="ri-checkbox-circle-line"></i> Security, observability, and compliance for GenAI</li>
                     </ul>
                   </div>
-                  <div class="topic-section">
-                    <h5>Security & Compliance</h5>
-                    <ul>
-                      <li>Data Privacy and GDPR Compliance</li>
-                      <li>Model Security and Adversarial Defense</li>
-                      <li>Access Control and Authentication</li>
-                      <li>Audit Logging and Compliance Reporting</li>
-                      <li>Ethical AI and Responsible Deployment</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Scaling & Performance</h5>
-                    <ul>
-                      <li>Performance Optimization at Scale</li>
-                      <li>Cost Management and Resource Optimization</li>
-                      <li>Monitoring and Observability Platforms</li>
-                      <li>Capacity Planning and Auto-Scaling</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="module-detail advanced-track" data-detail="12" style="display: none;">
-                <div class="module-detail-header">
-                  <h3>Module 6: Research & Innovation in Generative AI</h3>
-                  <span class="module-duration"><i class="ri-briefcase-line"></i> 8 Weeks</span>
-                </div>
-                <p class="module-description">
-                  Explore the cutting edge of generative AI research and contribute to the field. Learn to read research papers, implement novel techniques, and push the boundaries of what's possible with AI.
-                </p>
-                <div class="module-topics">
-                  <div class="topic-section">
-                    <h5>Research Methodologies</h5>
-                    <ul>
-                      <li>Reading and Understanding AI Research Papers</li>
-                      <li>Reproducing Research Results</li>
-                      <li>Experimental Design and Evaluation</li>
-                      <li>Statistical Analysis and Hypothesis Testing</li>
-                      <li>Writing Technical Papers and Documentation</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Emerging Technologies</h5>
-                    <ul>
-                      <li>Latest Model Architectures and Innovations</li>
-                      <li>New Training Techniques and Optimizations</li>
-                      <li>Emerging Applications and Use Cases</li>
-                      <li>Future Trends and Predictions</li>
-                      <li>Contributing to Open Source Projects</li>
-                    </ul>
-                  </div>
-                  <div class="topic-section">
-                    <h5>Innovation & Capstone Projects</h5>
-                    <ul>
-                      <li>Designing Novel AI Applications</li>
-                      <li>Capstone Project Development</li>
-                      <li>Publishing and Sharing Your Work</li>
-                      <li>Building a Research Portfolio</li>
-                    </ul>
+                  
+                  <div class="coming-soon-cta">
+                    <a href="#contact" class="btn-join-waitlist scrollto">
+                      <i class="ri-notification-line"></i> Join Advanced Track Waitlist
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1926,6 +1725,265 @@
           video.pause(); // Pause the video
         }
       };
+    </script>
+
+    <!-- ======= Free Preview Session Modal ======= -->
+    <div id="preview-session-modal" class="preview-modal-overlay">
+      <div class="preview-modal-card">
+        <!-- Left Column - Blue Side -->
+        <div class="preview-modal-left">
+          <div class="preview-badge">
+            <i class="ri-flashlight-line"></i>
+            <span>GenAI Bootcamp</span>
+          </div>
+          <p class="preview-badge-subtext">Focused • Live • Limited Seats</p>
+          
+          <h2 class="preview-main-heading">Join Our Upcoming GenAI Bootcamp</h2>
+          <p class="preview-subtext">A focused, live bootcamp designed to introduce practical GenAI concepts and showcase how we teach at Techtonic.</p>
+          <p class="preview-subtext-small">This session helps you decide if our full programs are right for you.</p>
+
+          <div class="preview-feature-cards">
+            <div class="preview-feature-card">
+              <div class="preview-feature-icon">
+                <i class="ri-focus-3-line"></i>
+              </div>
+              <div class="preview-feature-content">
+                <h4 class="preview-feature-title">Hands-on Bootcamp Learning</h4>
+                <p class="preview-feature-subtitle">Work through practical GenAI use-cases.</p>
+              </div>
+            </div>
+
+            <div class="preview-feature-card">
+              <div class="preview-feature-icon">
+                <i class="ri-book-open-line"></i>
+              </div>
+              <div class="preview-feature-content">
+                <h4 class="preview-feature-title">Clarity & Structured Teaching</h4>
+                <p class="preview-feature-subtitle">Complex topics explained in a simple, logical way.</p>
+              </div>
+            </div>
+
+            <div class="preview-feature-card">
+              <div class="preview-feature-icon">
+                <i class="ri-message-3-line"></i>
+              </div>
+              <div class="preview-feature-content">
+                <h4 class="preview-feature-title">Live Interactive Bootcamp Session</h4>
+                <p class="preview-feature-subtitle">Engage, ask questions, and learn actively.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - White Side -->
+        <div class="preview-modal-right">
+          <button class="preview-close-btn" id="previewCloseBtn">
+            <i class="ri-close-line"></i>
+          </button>
+
+          <p class="preview-intro-text">
+            This GenAI bootcamp gives you a hands-on introduction to our teaching approach, tools, and problem-solving mindset.
+          </p>
+
+          <h3 class="preview-section-heading">What You'll Experience:</h3>
+          
+          <ul class="preview-experience-list">
+            <li>
+              <i class="ri-sparkling-line"></i>
+              <span>Key GenAI concepts explained through examples</span>
+            </li>
+            <li>
+              <i class="ri-focus-3-line"></i>
+              <span>Real-world problem-solving approach</span>
+            </li>
+            <li>
+              <i class="ri-book-open-line"></i>
+              <span>Practical GenAI use-case walkthrough</span>
+            </li>
+            <li>
+              <i class="ri-group-line"></i>
+              <span>How we design hands-on sessions</span>
+            </li>
+            <li>
+              <i class="ri-message-3-line"></i>
+              <span>Live Q&A with instructors</span>
+            </li>
+          </ul>
+
+          <div class="preview-green-note">
+            <i class="ri-checkbox-circle-line"></i>
+            <span>This bootcamp is complimentary for learners exploring Techtonic's programs.</span>
+          </div>
+
+          <form id="previewSessionForm" class="preview-form" name="bootcamp-form" method="POST" action="https://script.google.com/macros/s/AKfycbzerRwspl0t0qse5sFnWrpFbu8ytLJFoxLY3hxMT7OCaxleEp9_qnNVjFhLdJ4t6vQS/exec">
+            <div class="preview-form-group">
+              <input type="text" id="previewFullName" name="name" required placeholder="Full Name *">
+            </div>
+
+            <div class="preview-form-group">
+              <input type="email" id="previewEmail" name="email" required placeholder="Email Address *">
+            </div>
+
+            <div class="preview-form-group">
+              <input type="tel" id="previewPhone" name="phone" placeholder="Phone (Optional)">
+            </div>
+            
+            <input type="hidden" name="subject" value="GenAI Bootcamp Registration">
+            <input type="hidden" name="message" value="New registration from Bootcamp Popup">
+            <input type="hidden" name="organization" value="Bootcamp Registration">
+
+            <button type="submit" class="preview-submit-btn">Register for the Bootcamp</button>
+          </form>
+
+          <div id="previewSuccessMessage" class="preview-success-message" style="display: none;">
+            Thank you! We'll email you the bootcamp details shortly.
+          </div>
+
+          <a href="#" class="preview-dont-show" id="previewDontShow">Don't show again today</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Free Preview Session Modal -->
+
+    <script>
+      // Free Preview Session Modal
+      (function() {
+        const modal = document.getElementById('preview-session-modal');
+        const closeBtn = document.getElementById('previewCloseBtn');
+        const dontShowLink = document.getElementById('previewDontShow');
+        const form = document.getElementById('previewSessionForm');
+        const successMessage = document.getElementById('previewSuccessMessage');
+        const heroBtn = document.getElementById('hero-bootcamp-btn');
+        const overlay = modal;
+
+        // Check localStorage for "don't show again" flag
+        function shouldShowModal() {
+          const dontShowUntil = localStorage.getItem('previewSessionDontShow');
+          if (!dontShowUntil) return true;
+          
+          const expiryTime = parseInt(dontShowUntil);
+          const now = Date.now();
+          const hours24 = 24 * 60 * 60 * 1000;
+          
+          return (now - expiryTime) >= hours24;
+        }
+
+        // Open popup immediately (ignores localStorage)
+        function openBootcampPopup() {
+          // Scroll to top before showing modal
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          // Prevent body scroll when modal is open
+          document.body.style.overflow = 'hidden';
+          // Show modal immediately
+          modal.style.display = 'flex';
+          
+          // Focus on first form input for accessibility
+          setTimeout(() => {
+            const firstInput = document.getElementById('previewFullName');
+            if (firstInput) {
+              firstInput.focus();
+            }
+          }, 100);
+        }
+
+        // Show modal after delay (auto-open on page load)
+        function showModal() {
+          if (shouldShowModal()) {
+            // Scroll to top before showing modal
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Prevent body scroll when modal is open
+            document.body.style.overflow = 'hidden';
+            
+            setTimeout(() => {
+              modal.style.display = 'flex';
+            }, 600); // 600ms delay
+          }
+        }
+
+        // Close modal
+        function closeModal() {
+          modal.style.display = 'none';
+          // Re-enable body scroll
+          document.body.style.overflow = '';
+          // Ensure page is at top after closing
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Set "don't show again" flag
+        function setDontShowFlag() {
+          localStorage.setItem('previewSessionDontShow', Date.now().toString());
+        }
+
+        // Close button
+        if (closeBtn) {
+          closeBtn.addEventListener('click', closeModal);
+        }
+
+        // Overlay click
+        if (overlay) {
+          overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+              closeModal();
+            }
+          });
+        }
+
+        // Don't show again link
+        if (dontShowLink) {
+          dontShowLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            setDontShowFlag();
+            closeModal();
+          });
+        }
+
+        // Hero button click handler
+        if (heroBtn) {
+          heroBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            openBootcampPopup();
+          });
+        }
+
+        // Form submission using Google Apps Script (same as contact form)
+        if (form) {
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = form.querySelector('.preview-submit-btn');
+            const originalBtnText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            
+            // Use the same Google Apps Script URL as contact form
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzerRwspl0t0qse5sFnWrpFbu8ytLJFoxLY3hxMT7OCaxleEp9_qnNVjFhLdJ4t6vQS/exec';
+            
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+              .then((response) => {
+                // Hide form and show success message
+                form.style.display = 'none';
+                successMessage.style.display = 'block';
+                form.reset();
+              })
+              .catch((error) => {
+                console.error('Error:', error);
+                alert('Sorry, there was an error sending your registration. Please try again or contact us directly.');
+                // Re-enable button
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
+              });
+          });
+        }
+
+        // Show modal on page load
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', showModal);
+        } else {
+          showModal();
+        }
+      })();
     </script>
   </body>
 </html>
