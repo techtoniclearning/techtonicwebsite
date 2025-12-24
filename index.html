@@ -796,48 +796,48 @@
           <div class="path-cards-wrapper">
             <div class="path-card">
               <div class="path-card-badge">
-                <i class="ri-star-line"></i>
-                <span>Beginner-Friendly</span>
+                <i class="ri-book-open-line"></i>
+                <span>Core Track</span>
               </div>
-              <h3 class="path-card-title">Generative AI Foundations</h3>
+              <h3 class="path-card-title">Core GenAI Systems Builder</h3>
               <div class="path-card-meta">
-                <span class="path-duration"><i class="ri-time-line"></i> 6 weeks</span>
-                <span class="path-price">₹25,000</span>
+                <span class="path-duration"><i class="ri-time-line"></i> 10 weeks</span>
+                <span class="path-price">₹40,000</span>
               </div>
               <ul class="path-features">
-                <li><i class="ri-check-line"></i> Understand how LLMs, embeddings, and prompting actually work.</li>
-                <li><i class="ri-check-line"></i> Learn core tools: Python, APIs, and basic LangChain workflows.</li>
-                <li><i class="ri-check-line"></i> Build your first GenAI apps: Q&A bots, summarizers, and assistants.</li>
-                <li><i class="ri-check-line"></i> Weekly live sessions and doubt-clearing support.</li>
-                <li><i class="ri-check-line"></i> Perfect for developers, analysts, and tech-curious professionals.</li>
+                <li><i class="ri-check-line"></i> Understand how LLMs, embeddings, and prompting work in real-world systems</li>
+                <li><i class="ri-check-line"></i> Build production-style GenAI applications (chatbots, RAG, summarization)</li>
+                <li><i class="ri-check-line"></i> Work with APIs, vector databases, and structured outputs</li>
+                <li><i class="ri-check-line"></i> Design conversational workflows using prompts and retrieval</li>
+                <li><i class="ri-check-line"></i> Deploy GenAI applications using FastAPI and Docker</li>
+                <li><i class="ri-check-line"></i> Weekly live sessions with hands-on guidance and doubt clearing</li>
               </ul>
+              <p class="path-card-footer">Ideal for beginners to mid-level professionals looking to build real GenAI systems.</p>
               <div class="path-card-actions">
                 <a href="#contact" class="btn-talk-to-us"><i class="ri-message-3-line"></i> Talk to Us</a>
                 <a href="#curriculum" class="btn-register-now"><i class="ri-file-list-3-line"></i> Register Now</a>
               </div>
             </div>
 
-            <div class="path-card path-card-featured">
-              <div class="path-card-popular">Most Popular</div>
-              <div class="path-card-badge">
+            <div class="path-card path-card-advanced">
+              <div class="path-card-badge path-card-badge-advanced">
                 <i class="ri-group-line"></i>
-                <span>Advanced Track</span>
+                <span>Advanced Track • Coming Soon</span>
               </div>
-              <h3 class="path-card-title">Applied GenAI Builder</h3>
+              <h3 class="path-card-title">Advanced GenAI Systems & Architecture</h3>
               <div class="path-card-meta">
-                <span class="path-duration"><i class="ri-time-line"></i> 10 weeks</span>
-                <span class="path-price">₹40,000</span>
+                <span class="path-duration path-duration-coming-soon">Coming Soon</span>
               </div>
               <ul class="path-features">
-                <li><i class="ri-check-line"></i> Design and build production-style RAG applications.</li>
-                <li><i class="ri-check-line"></i> Work with vector databases, evaluation, and retrieval strategies.</li>
-                <li><i class="ri-check-line"></i> Implement agentic workflows and tool-calling.</li>
-                <li><i class="ri-check-line"></i> Build projects that integrate with real APIs and databases.</li>
-                <li><i class="ri-check-line"></i> Portfolio-ready projects with feedback and improvement suggestions.</li>
+                <li><i class="ri-check-line"></i> Design enterprise-grade GenAI architectures at scale</li>
+                <li><i class="ri-check-line"></i> Advanced RAG evaluation, optimization, and reliability techniques</li>
+                <li><i class="ri-check-line"></i> Agentic workflows with governance, guardrails, and cost control</li>
+                <li><i class="ri-check-line"></i> Security, observability, and performance tuning for GenAI systems</li>
+                <li><i class="ri-check-line"></i> Real-world system design based on Core Track learnings</li>
               </ul>
+              <p class="path-card-footer">Available after completing the Core Track.<br>Syllabus will evolve based on real project learnings.</p>
               <div class="path-card-actions">
-                <a href="#contact" class="btn-talk-to-us btn-talk-to-us-primary"><i class="ri-message-3-line"></i> Talk to Us</a>
-                <a href="#curriculum" class="btn-register-now"><i class="ri-file-list-3-line"></i> Register Now</a>
+                <a href="#contact" class="btn-join-waitlist-path scrollto"><i class="ri-notification-line"></i> Join Waitlist</a>
               </div>
             </div>
           </div>
@@ -1872,8 +1872,14 @@
         function openBootcampPopup() {
           // Scroll to top before showing modal
           window.scrollTo({ top: 0, behavior: 'smooth' });
-          // Prevent body scroll when modal is open
-          document.body.style.overflow = 'hidden';
+          // On mobile, allow overlay scrolling; on desktop, prevent body scroll
+          if (window.innerWidth <= 768) {
+            document.body.style.overflow = '';
+            modal.style.overflowY = 'auto';
+          } else {
+            document.body.style.overflow = 'hidden';
+            modal.style.overflowY = 'auto';
+          }
           // Show modal immediately
           modal.style.display = 'flex';
           
@@ -1891,8 +1897,14 @@
           if (shouldShowModal()) {
             // Scroll to top before showing modal
             window.scrollTo({ top: 0, behavior: 'smooth' });
-            // Prevent body scroll when modal is open
-            document.body.style.overflow = 'hidden';
+            // On mobile, allow overlay scrolling; on desktop, prevent body scroll
+            if (window.innerWidth <= 768) {
+              document.body.style.overflow = '';
+              modal.style.overflowY = 'auto';
+            } else {
+              document.body.style.overflow = 'hidden';
+              modal.style.overflowY = 'auto';
+            }
             
             setTimeout(() => {
               modal.style.display = 'flex';
