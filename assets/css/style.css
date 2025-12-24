@@ -1014,6 +1014,13 @@ section {
   margin: auto;
 }
 
+@media (max-width: 992px) {
+  .preview-modal-card {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
 /* Left Column - Blue Side */
 .preview-modal-left {
   background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 100%);
@@ -1379,25 +1386,35 @@ section {
   .preview-modal-overlay {
     padding: 15px;
     align-items: flex-start;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .preview-modal-card {
     grid-template-columns: 1fr;
     max-width: 100%;
-    max-height: calc(100vh - 30px);
+    max-height: none;
     margin-top: 0;
+    margin-bottom: 20px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
   }
 
   .preview-modal-left {
     padding: 25px 20px;
     max-height: none;
     min-height: auto;
+    overflow-y: visible;
+    flex-shrink: 0;
   }
 
   .preview-modal-right {
     padding: 25px 20px;
     max-height: none;
     min-height: auto;
+    overflow-y: visible;
+    flex-shrink: 0;
   }
 
   .preview-main-heading {
@@ -1410,19 +1427,26 @@ section {
     padding: 10px;
     align-items: flex-start;
     padding-top: 10px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .preview-modal-card {
     border-radius: 16px;
-    max-height: calc(100vh - 20px);
+    max-height: none;
     margin-top: 0;
+    margin-bottom: 20px;
     width: 100%;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
   }
 
   .preview-modal-left {
     padding: 20px 18px;
     max-height: none;
     overflow-y: visible;
+    flex-shrink: 0;
   }
 
   .preview-modal-right {
@@ -1430,6 +1454,7 @@ section {
     padding-top: 50px; /* Extra space for close button */
     max-height: none;
     overflow-y: visible;
+    flex-shrink: 0;
   }
 
   .preview-main-heading {
@@ -1468,18 +1493,25 @@ section {
   .preview-modal-overlay {
     padding: 5px;
     padding-top: 5px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .preview-modal-card {
-    max-height: calc(100vh - 10px);
+    max-height: none;
     border-radius: 12px;
     width: 100%;
+    margin-bottom: 10px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
   }
 
   .preview-modal-left {
     padding: 18px 15px;
     max-height: none;
     overflow-y: visible;
+    flex-shrink: 0;
   }
 
   .preview-modal-right {
@@ -1487,6 +1519,7 @@ section {
     padding-top: 45px;
     max-height: none;
     overflow-y: visible;
+    flex-shrink: 0;
   }
 
   .preview-main-heading {
@@ -2459,20 +2492,26 @@ section {
   box-shadow: 0 0 30px rgba(71, 178, 228, 0.2);
 }
 
+.path-card-advanced {
+  border: 1px solid #e8ecf1;
+  position: relative;
+  background: #fafbfc;
+}
+
+.path-card-advanced:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: #d0d7de;
+}
+
+.path-card-badge-advanced {
+  background: rgba(71, 178, 228, 0.15);
+  border-color: rgba(71, 178, 228, 0.3);
+  color: #47b2e4;
+}
+
 .path-card-popular {
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #47b2e4;
-  color: #fff;
-  padding: 6px 20px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 4px 15px rgba(71, 178, 228, 0.4);
+  display: none;
 }
 
 .path-card-badge {
@@ -2552,10 +2591,57 @@ section {
   flex-shrink: 0;
 }
 
+.path-card-footer {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-style: italic;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.path-duration-coming-soon {
+  font-size: 16px;
+  font-weight: 600;
+  color: #47b2e4;
+  font-style: italic;
+}
+
 .path-card-actions {
   display: flex;
   gap: 15px;
   margin-top: 30px;
+}
+
+.btn-join-waitlist-path {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: #47b2e4;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-join-waitlist-path:hover {
+  background: #209dd8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(71, 178, 228, 0.3);
+  color: #fff;
+}
+
+.btn-join-waitlist-path i {
+  font-size: 18px;
 }
 
 .btn-talk-to-us,
